@@ -65,31 +65,6 @@
             position: relative;
             width: 300px;
         }
-        .post-image {
-            width: 300px;
-            height: 300px;
-        }
-        .about {
-            text-align: left;
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-bottom: 10px;
-        }
-        .contact {
-            text-align: left;
-            padding-top: 0px;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-bottom: 0px;
-        }
-        .projects {
-            text-align: left;
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-bottom: 10px;
-        }
         .spinner {
             width: 36px;
             height: 36px;
@@ -105,8 +80,63 @@
             width: 100%;
             margin: 0;
         }
-        .contact-button {
-            margin-bottom: 10px;
+        .about {
+            text-align: left;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+        .projects {
+            text-align: left;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+        .contact {
+            padding: 0;
+            height: 150px;
+        }
+        .facebook {
+            background-image: url(images/facebook.png);
+            width: 150px;
+            height: 75px;
+            float: left;
+            transition: 0.1s ease;
+        }
+        .facebook:hover {
+            background-image: url(images/facebook-hover.png);
+        }
+        .google-plus {
+            background-image: url(images/google-plus.png);
+            width: 150px;
+            height: 75px;
+            float: left;
+            transition: 0.1s ease;
+        }
+        .google-plus:hover {
+            background-image: url(images/google-plus-hover.png);
+        }
+        .email {
+            background-image: url(images/email.png);
+            width: 150px;
+            height: 75px;
+            float: left;
+            transition: 0.1s ease;
+        }
+        .email:hover {
+            background-image: url(images/email-hover.png);
+        }
+        .github {
+            background-image: url(images/github.png);
+            width: 150px;
+            height: 75px;
+            float: left;
+            transition: 0.1s ease;
+        }
+        .github:hover {
+            background-image: url(images/github-hover.png);
         }
     </style>
 </head>
@@ -129,37 +159,25 @@
             <div class="about">
                 Welcome to my website. My name is Martin Ristovski and I'm a 14 year old boy from Makedonska Kamenica, Macedonia. I'm interested in technology and physics. I won the 2013/2014 National Physics Contest with 97/100 points. I'm also an amateur developer
                 and I currently have some experience with HTML, CSS and JavaScript.
-                <br> Contact me via:
-            </div>
-            <div class="contact">
-                <!--Facebook-->
-                <a href="https://www.facebook.com/mufc4martin">
-                    <paper-icon-button src="icons/facebook.png" class="contact-button"></paper-icon-button>
-                </a>
-                <!--Google Plus-->
-                <a href="https://plus.google.com/+MartinRistovski">
-                    <paper-icon-button src="icons/google-plus.png" class="contact-button"></paper-icon-button>
-                </a>
-                <!--Email-->
-                <a href="mailto:mufc4martin@gmail.com">
-                    <paper-icon-button src="icons/email-outline.png" class="contact-button"></paper-icon-button>
-                </a>
-                <!--Github-->
-                <a href="https://github.com/mufc4martin">
-                    <paper-icon-button src="icons/github-circle.png" class="contact-button"></paper-icon-button>
-                </a>
             </div>
         </paper-shadow>
         <paper-shadow class="card">
             <div class="projects">
                 Check out my projects:
                 <br>
-                <br>
                 <a href="http://mufc4martin.github.io/tempus">Tempus</a>
                 <br>
                 <a href="http://kiril-metodij.edu.mk">My school's website</a>
                 <br>
                 <a href="http://moduloteam.github.io/modulo-calculator">Modulo Calculator</a>
+            </div>
+        </paper-shadow>
+        <paper-shadow class="card">
+            <div class="contact">
+                <a href="https://www.facebook.com/mufc4martin"><div class="facebook"></div></a>
+                <a href="https://plus.google.com/+MartinRistovski"><div class="google-plus"></div></a>
+                <a href="mailto:mufc4martin@gmail.com"><div class="email"></div></a>
+                <a href="https://github.com/mufc4martin"><div class="github"></div></a>
             </div>
         </paper-shadow>
     </core-header-panel>
@@ -179,7 +197,5 @@
             $(".spinner-background").fadeOut("slow");
         })
     </script>
-
 </body>
-
 </html>
