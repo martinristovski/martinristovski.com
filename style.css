@@ -19,7 +19,7 @@ ul{ list-style: none; }
 
 a{
     text-decoration: none;
-    color: #f33643;
+    color: #0c5202;
     cursor: pointer;
 }
 
@@ -27,7 +27,7 @@ a.btn{
     color: #fff;
     border-radius: 64px;
     text-transform: capitalize;
-    background-color: #f33643;
+    background-color: #0c5202;
     font-weight: 700;
     font-size: 16pt;
     text-align: center;
@@ -39,7 +39,7 @@ a.btn{
 hr{
     width: 250px;
     height: 2px;
-    background-color: #f33643;
+    background-color: #0c5202;
     border: 0;
     margin-bottom: 40px;
 }
@@ -155,7 +155,7 @@ ul.grid{
 
 .features .grid li i{
     font-size: 50px;
-    color: #f33643;
+    color: #0c5202;
     margin-bottom: 25px;
 }
 
